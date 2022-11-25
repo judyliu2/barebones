@@ -1,2 +1,2 @@
 # barebones
-Recreating Barebones project to practice javascript
+Recreating Barebones project to practice React
