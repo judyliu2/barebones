@@ -2,9 +2,12 @@ import React from "react";
 import ToDoItem from "./ToDoItem"
 
 function ToDoList(props){
+    const listStyle = {
+        listStyleType : "none",
+    }
     return (
         <div>
-            <ul>
+            <ul style={listStyle}>
             {props.tasks.map(task => 
                 <ToDoItem 
                     key={task.id}

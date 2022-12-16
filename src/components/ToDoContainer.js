@@ -10,7 +10,7 @@ function ToDoContainer(props) {
     let [filter, setFilter] = useState("");
     let [filteredTasks, setFilteredTasks] = useState([]);
 
-    let handleCheckbox = (id: int) => {
+    let handleCheckbox = (id) => {
         const newTasks = tasks.map(task => {
            if( task.id === id) {
             task.done = !task.done;
@@ -20,7 +20,7 @@ function ToDoContainer(props) {
         setTasks(newTasks);
     }
 
-    let selectAll = (complete: boolean) => {
+    let selectAll = (complete) => {
         const newTasks = tasks.map(task => {
             task.done = complete;
             return task;
@@ -28,14 +28,14 @@ function ToDoContainer(props) {
          setTasks(newTasks);
     }
 
-    let deleteTask = (id: int) => {
+    let deleteTask = (id) => {
         const newTasks = tasks.filter(task => 
             task.id !== id
          );
          setTasks(newTasks);
     }
 
-    let addTask = (description: string) => {
+    let addTask = (description) => {
         let newTask = {
             id: uuidv4(),
             description: description,
