@@ -4,6 +4,8 @@ import ToDoItem from "./ToDoItem"
 function ToDoList(props){
     const listStyle = {
         listStyleType : "none",
+        margin: "0",
+        padding: "0",
     }
     return (
         <div>

@@ -6,9 +6,17 @@ import ToDoContainer from './components/ToDoContainer';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const containerStyle = {
+  height: "100vh",
+  justifyContent: "center",
+  alignItems: "center",
+  display: "flex"
+}
 root.render(
   <React.StrictMode>
+    <div style={containerStyle}>
     <ToDoContainer />
+    </div>
   </React.StrictMode>
 );
 
